@@ -2,6 +2,7 @@ package com.example.fxdspringmybatis.service;
 
 import com.example.fxdspringmybatis.bean.User;
 import com.example.fxdspringmybatis.mapper.UserMapper;
+import com.example.fxdspringmybatis.util.GetNumUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,6 +16,11 @@ public class UserService {
 
     public List<User> userList(){
         return userMapper.userList();
+    }
+
+
+    public GetNumUtil getclassUtil(){
+      return  GetNumUtil.getInstance();
     }
 
 
