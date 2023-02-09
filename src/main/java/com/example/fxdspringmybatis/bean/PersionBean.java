@@ -4,5 +4,7 @@ public class PersionBean {
 
     private String id;
 
+    private String name;
+
 
 }
